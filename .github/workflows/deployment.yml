@@ -27,6 +27,8 @@ jobs:
           node-version: 18
      - name: Install Depencies
        run: npm ci
+     - name: Install vites
+       run: npm i vite       
      - name: Run test
        run: npm run test
   build: 
