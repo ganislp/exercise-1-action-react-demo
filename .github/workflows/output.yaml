@@ -1,8 +1,8 @@
 name: Eevent Output
-on: push
+on: issues
 jobs:
    issues:
      runs-on: ubuntu-latest
      steps:
         - name: Event Details Issues
-          run: echo "${{toJson(github.event.repository.open_issues)}}" 
+          run: echo "${{toJson(github.event)}}" 
