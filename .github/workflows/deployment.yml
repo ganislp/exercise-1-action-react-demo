@@ -43,7 +43,7 @@ jobs:
        - name: Install vites
          run: npm i vite
        - name:  Build project
-         run: npm run build   
+         run: vite build  
   deploye: 
     runs-on: ubuntu-latest
     steps: 
